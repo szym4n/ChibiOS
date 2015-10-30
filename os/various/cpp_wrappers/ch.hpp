@@ -297,6 +297,8 @@ namespace chibios_rt {
      */
     inline void setI(systime_t time, vtfunc_t vtfunc, void *par);
 
+    void set(systime_t time, vtfunc_t vtfunc, void *par);
+
     /**
      * @brief   Resets the timer, if armed.
      *
