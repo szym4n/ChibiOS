@@ -34,6 +34,11 @@ namespace chibios_rt {
     chVTSetI(&timer_ref, time, vtfunc, par);
   }
 
+  void Timer::set(systime_t time, vtfunc_t vtfunc, void *par) {
+
+    chVTSet(&timer_ref, time, vtfunc, par);
+  }
+
   void Timer::resetI() {
 
     if (chVTIsArmedI(&timer_ref))
